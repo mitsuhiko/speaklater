@@ -24,15 +24,16 @@ setup(
     name='speaklater',
     author='Armin Ronacher',
     author_email='armin.ronacher@active-4.com',
-    version='1.0',
+    version='1.1',
     url='http://dev.pocoo.org/hg/speaklater-main',
     py_modules=['speaklater'],
     description='implements a lazy string for python useful for use with gettext',
     long_description=get_docs(),
     zip_safe=False,
     classifiers=[
+        'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: BSD License',
-        'Programming Language :: PHP',
+        'Topic :: Software Development :: Internationalization',
         'Programming Language :: Python'
     ]
 )

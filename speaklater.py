@@ -14,21 +14,21 @@ r"""
 
     >>> from speaklater import make_lazy_string
     >>> sval = u'Hello World'
-    >>> str = make_lazy_string(lambda: sval)
+    >>> string = make_lazy_string(lambda: sval)
 
     This lazy string will evaluate to the value of the `sval` variable.
 
-    >>> str
+    >>> string
     lu'Hello World'
-    >>> unicode(str)
+    >>> unicode(string)
     u'Hello World'
-    >>> str.upper()
+    >>> string.upper()
     u'HELLO WORLD'
 
     If you change the value, the lazy string will change as well:
 
     >>> sval = u'Hallo Welt'
-    >>> sval.upper()
+    >>> string.upper()
     u'HALLO WELT'
 
     This is especially handy when combined with a thread local and gettext
@@ -48,7 +48,7 @@ r"""
 
     Lazy strings are no real strings so if you pass this sort of string to
     a function that performs an instance check, it will fail.  In that case
-    you have to explicitly convert it with `unicode` and/or `str` depending
+    you have to explicitly convert it with `unicode` and/or `string` depending
     on what string type the lazy string encapsulates.
 
     To check if a string is lazy, you can use the `is_lazy_string` function:
