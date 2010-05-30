@@ -24,7 +24,7 @@ setup(
     name='speaklater',
     author='Armin Ronacher',
     author_email='armin.ronacher@active-4.com',
-    version='1.1',
+    version='1.2',
     url='http://dev.pocoo.org/hg/speaklater-main',
     py_modules=['speaklater'],
     description='implements a lazy string for python useful for use with gettext',
