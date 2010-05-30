@@ -1,4 +1,6 @@
 \.DS_Store$
 \.py[co]$
+\.egg-info$
 dist/
+build/
 MANIFEST
