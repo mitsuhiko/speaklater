@@ -177,10 +177,10 @@ class _LazyString(object):
         return getattr(self.value, name)
 
     def __getstate__(self):
-        return self._func, self._args
+        return self._func, self._args, self._kwargs
 
     def __setstate__(self, tup):
-        self._func, self._args = tup
+        self._func, self._args, self._kwargs = tup
 
     def __getitem__(self, key):
         return self.value[key]
